@@ -19,5 +19,5 @@ jobs:
 
       - name: Build llama.cpp
         run: |
-          cmake -B build
+          cmake -B build -DLLAMA_CURL=OFF
           cmake --build build --config Release
