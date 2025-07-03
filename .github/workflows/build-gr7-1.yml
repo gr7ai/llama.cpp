@@ -19,5 +19,5 @@ jobs:
 
       - name: Build llama.cpp
         run: |
-          make -B build -DGGML_CUDA=ON
+          cmake -B build
           cmake --build build --config Release
